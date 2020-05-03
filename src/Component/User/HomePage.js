@@ -8,6 +8,10 @@ function HomePage() {
         history.push('/login')
     }
 
+    const signupClick = () => {
+        history.push('/register')
+    }
+
     return (
         <div>
             <section className="main-page">
@@ -38,7 +42,7 @@ function HomePage() {
                         <div className="middle-content">
                             <i class="fab fa-twitter"></i>                            <h1>See what's hapenning in the JavaScript world</h1>
                             <h4>Join twitterJs.com today</h4>
-                            <button type="button" className="sign-up">Sign Up</button>
+                            <button onClick={signupClick} type="button" className="sign-up">Sign Up</button>
                             <button onClick={loginClick} type="button" className="log-in">Log In</button>
                         </div>
                     </div>
