@@ -13,3 +13,6 @@
 
 # ignore all styles
 *.css
+
+#ignore config
+/config
