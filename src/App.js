@@ -8,6 +8,7 @@ import Signup from './Component/User/Signup.js'
 import AuthState from './Component/Context/Authorization/AuthState'
 import AlertState from './Component/Context/Alert/AlertState'
 import NewsFeed from './Component/News-Feed/NewsFeed';
+import SideBar from './Component/News-Feed/SideBar';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route exact path='/login' component={Signin} />
               <Route exact path='/register' component={Signup} />
               <Route exact path='/feed' component={NewsFeed} />
+              <Route exact path='/nav' component={SideBar} />
               <Route component={NotFound} />
             </Switch>
           </div>
