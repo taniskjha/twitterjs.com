@@ -1,9 +1,14 @@
 import React from 'react'
 import '../Css/Signin.css'
 import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 function Signin(props) {
 
+    const history = useHistory()
+    const onClick = () => {
+        history.push('/feed')
+    }
     return (
         <section className="login-page">
             {/* login page nav */}
@@ -25,7 +30,7 @@ function Signin(props) {
                         <input type="text" placeholder="Phone, email, or username" />
                         <input type="password" placeholder="Password" />
                         <div>
-                            <button type="button" className="login-form-btn">Log In</button>
+                            <button onClick={onClick} type="button" className="login-form-btn">Log In</button>
                             <input type="checkbox" className="login-form-checkbox" id="check" />
                             <label htmlFor="check">Remember me</label>
                             <a href="/">Forgot password?</a>

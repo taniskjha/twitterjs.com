@@ -40,7 +40,7 @@ function HomePage() {
                     <div className="right-content">
 
                         <div className="middle-content">
-                            <i class="fab fa-twitter"></i>                            <h1>See what's hapenning in the JavaScript world</h1>
+                            <i class="fab fa-twitter"></i>                            <h1>See what's happening in the world right now</h1>
                             <h4>Join twitterJs.com today</h4>
                             <button onClick={signupClick} type="button" className="sign-up">Sign Up</button>
                             <button onClick={loginClick} type="button" className="log-in">Log In</button>
@@ -49,7 +49,7 @@ function HomePage() {
                 </div>
                 {/* end of right */}
                 {/* footer */}
-                <footer className="main-page-footer">
+                <footer style={{ marginBottom: "-20px" }} className="main-page-footer">
                     <ul>
                         <li><a href="/">About</a></li>
                         <li><a href="/">Blog</a></li>

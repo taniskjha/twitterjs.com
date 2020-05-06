@@ -1,1 +1,1 @@
-export const prod_url = "http://13.235.242.93:5000";
+export const prod_url = "http://localhost:4000";
